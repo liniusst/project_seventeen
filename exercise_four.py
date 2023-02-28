@@ -1,5 +1,3 @@
-from typing import Union
-
 class Country:
     def __init__(self, country: str, population: int, area: int) -> "Country":
         self.country = country
@@ -19,11 +17,6 @@ class Country:
         else:
             print(f" {second.country} has larger population density than {self.country}")
 
-
-        
 australia = Country("Australia", 23545500, 7692024)
 andorra = Country("Andorra", 76098, 468)
-
 andorra.compare_pd(australia)
-# print(bool(australia.is_big()))
-# print(bool(andorra.is_big()))
